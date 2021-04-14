@@ -30,9 +30,13 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
 app.use('/students', studentsRouter)
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(path.join(__dirname, 'client/build')))//deploy
 
-app.post('/testupl', upload.any(), (req, res, next) => {
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))// unrouting
+})
+
+app.post('/testupl', upload.any(), (req, res, next) => { 
   const file = req.files;
   console.log(file);
   res.json(file[0].filename);
