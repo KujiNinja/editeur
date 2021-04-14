@@ -14,13 +14,13 @@ const __dirname = path.dirname(__filename);
 
 const app = express()
 
-// mongoose.connect('mongodb://localhost:27017/StudentsDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/StudentsDB', { useNewUrlParser: true, useUnifiedTopology: true })
 
-// const Student = mongoose.model('Student', {
-//   name: { type: String, trim: true },
-//   age: Number,
-//   edit: Boolean,
-// })
+const Student = mongoose.model('Student', {
+  name: { type: String, trim: true },
+  age: Number,
+  edit: Boolean,
+})
 
 const upload = multer({
   dest: 'public/uploads/',
