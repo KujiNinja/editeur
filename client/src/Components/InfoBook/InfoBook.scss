@@ -1,0 +1,36 @@
+.coverBig{
+  justify-content: center;
+  padding: 2em;
+  // background-color: #fddcd0;
+  width: 55em;
+  height: 35em;
+  box-sizing: content-box;
+}
+
+.bookInfo{
+  width: 25em;
+  height: 35em;
+  padding: 2em;
+  background-color: #fddcd0;
+}
+
+.imgCover{
+  width: 25em;
+  height: 35em;
+}
+
+.buttonList{
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.summaryBook {
+  hyphens: auto;
+  overflow: scroll;
+  height: 23em;
+}
+
+.authorBook {
+  color: rgba(144, 98, 109, .7);
+}
