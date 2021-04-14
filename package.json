@@ -6,8 +6,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "build" : "cd client && npm && npm run build",
-    "start" : "cd server && npm && npm start"
+    "build" : "cd client && npm install && npm run-scripts build",
+    "start" : "cd server && npm install && npm start"
   },
   "repository": {
     "type": "git",
