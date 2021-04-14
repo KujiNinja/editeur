@@ -30,6 +30,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
 app.use('/students', studentsRouter)
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.post('/testupl', upload.any(), (req, res, next) => {
   const file = req.files;
