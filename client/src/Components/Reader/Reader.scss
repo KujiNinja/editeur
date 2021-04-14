@@ -1,0 +1,62 @@
+.page {
+  border: none;
+  margin: 0 5px;
+  
+}
+
+canvas {
+  border: 0;
+  height: 80vh;
+}
+
+.reader-btn {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 5em;
+  position: relative;
+  transition: all .5s;
+}
+
+.reader-prev {
+  &:hover {
+    transform: translate(-10px, 0);
+  }
+}
+
+.reader-next {
+  &:hover {
+    transform: translate(10px, 0);
+  }
+}
+
+.reader__pages-count {
+  color: white;
+  margin-top: 10px;
+}
+
+.react-pdf__message--no-data {
+  display: none!important;
+}
+
+.reader_button {
+  align-self: flex-start;
+  margin: 20px 0 30px 7em;
+}
+
+.reader_button_box {
+  align-self: flex-start;
+  margin: 0 0 30px 7em;
+}
+
+.disabled {
+  background-color: rgb(180, 139, 149)!important;
+
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.box-invisible {
+  display: none!important;
+}
