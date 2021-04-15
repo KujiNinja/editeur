@@ -7,7 +7,7 @@ const server = http.createServer(app)
 
 
 app.get('*', (req,res) => {
-  res.sendFile(path.resolve('../client/build/index.html'))// unrouting
+  res.sendFile(path.resolve('./public/build/index.html'))// unrouting
 })
 
 server.listen(port, () => {
