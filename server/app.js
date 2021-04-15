@@ -26,7 +26,7 @@ const upload = multer({
   dest: 'public/uploads/',
 });
 
-app.use(express.static(path.resolve('./public/build')))//deploy
+app.use(express.static(path.join(__dirname, 'public')))//deploy
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
